@@ -7,7 +7,7 @@ The system continuously monitors emulated grid voltage and load current. It prot
 ## How to Run the Simulation
 1. Open the Proteus project file located in the `project_files/` directory.
 2. Double-click the ATmega328P microcontroller in the schematic.
-3. Load the compiled `.hex` file (also located in `project_files/`) into the microcontroller.
+3. Make sure to remove the built-in Source Code button of Proteus first because we will manually upload the code into arduino. Now load the compiled `.hex` file (also located in `project_files/`) into the microcontroller.
 4. Run the simulation.
 5. Use the RV1 (Voltage) and RV2 (Current) potentiometers to simulate grid fluctuations and trigger the fault logic.
 
