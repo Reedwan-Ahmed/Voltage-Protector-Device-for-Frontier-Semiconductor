@@ -1,13 +1,13 @@
-# Voltage-Protector-Device-for-Frontier-Semiconductor
+# Voltage-Protector-Device-for-Frontier-Semiconductor-by Md Reedwan Ahmed
 This repository contains the firmware, simulation files, and documentation for a microcontroller-based Voltage Protector system designed for the Frontier Semiconductor Embedded System Engineer assessment.
 
 ## Project Overview
 The system continuously monitors emulated grid voltage and load current. It protects connected appliances by physically isolating the load via a relay if the grid drops below 180V, surges above 250V, or exceeds a 10A current draw.
 
 ## How to Run the Simulation
-1. Open the Proteus project file located in the `project_files/` directory.
+1. Open the Proteus project file **[REEDWAN_PROTEUS_PROJECT.pdsprj](./project_files/REEDWAN_PROTEUS_PROJECT.pdsprj)** located in the **[project_files/](./project_files)** directory.
 2. Double-click the ATmega328P microcontroller in the schematic.
-3. Make sure to remove the built-in Source Code button of Proteus first because we will manually upload the code into arduino. Now load the compiled `.hex` file (also located in `project_files/`) into the microcontroller.
+3. Load the compiled hex file, **[voltage_protector.ino.hex](./src/voltage_protector.ino.hex)** (located in the **[src/](./src)** directory), into the microcontroller properties.
 4. Run the simulation.
 5. Use the RV1 (Voltage) and RV2 (Current) potentiometers to simulate grid fluctuations and trigger the fault logic.
 
@@ -16,8 +16,18 @@ The system continuously monitors emulated grid voltage and load current. It prot
   * **Menu:** Interrupts the main screen and enters the Settings menu.
   * **Up:** Increases the selected safety limit (Voltage/Current).
   * **Down:** Decreases the selected safety limit.
-  * **Save:** Saves the new limit permanently to the microcontroller's EEPROM.
+  * **Save:** Saves the new limit permanently to the microcontroller's internal EEPROM.
 * **Remote UI:** Connect via the UART Virtual Terminal to view live telemetry and send remote configuration commands.
 
-## Documentation
-Please refer to the `design document.pdf` in the root directory for a detailed breakdown of the hardware architecture, firmware logic, and testing results.
+## Documentation & Evidence
+For a complete breakdown of the hardware architecture, firmware logic, and testing results, please read the **[Project Report (design_document.pdf)](./design_document.pdf)**. 
+
+To view the raw circuit diagrams or screenshots of the system handling faults, please check the **[schematics/](./schematics)** and **[test_evidence/](./test_evidence)** folders respectively.
+
+## Repository Contents
+You can click directly on the links below to access the project files and directories:
+* **[project_files/REEDWAN_PROTEUS_PROJECT.pdsprj](./project_files/REEDWAN_PROTEUS_PROJECT.pdsprj)** - The main Proteus simulation workspace.
+* **[src/voltage_protector.ino.hex](./src/voltage_protector.ino.hex)** - The compiled firmware hex file to upload to the microcontroller.
+* **[design_document.pdf](./design_document.pdf)** - The 1-page Project Report detailing the design approach, components, and results.
+* **[schematics/](./schematics)** - Contains the system circuit diagrams and visual block diagrams.
+* **[test_evidence/](./test_evidence)** - View performance captures, logs, and screenshots of the simulation in action.
