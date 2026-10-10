@@ -6,7 +6,7 @@ The system continuously monitors emulated grid voltage and load current. It prot
 
 ## How to Run the Simulation
 1. Open the Proteus project file **[REEDWAN_PROTEUS_PROJECT.pdsprj](./project_files/REEDWAN_PROTEUS_PROJECT.pdsprj)** located in the **[project_files/](./project_files)** directory.
-2. Double-click the ATmega328P microcontroller in the schematic.
+2. Double-click the ATmega328P microcontroller in the schematic and Select the Program File folder.
 3. Load the compiled hex file, **[voltage_protector.ino.hex](./src/voltage_protector.ino.hex)** (located in the **[src/](./src)** directory), into the microcontroller properties.
 4. Run the simulation.
 5. Use the RV1 (Voltage) and RV2 (Current) potentiometers to simulate grid fluctuations and trigger the fault logic.
