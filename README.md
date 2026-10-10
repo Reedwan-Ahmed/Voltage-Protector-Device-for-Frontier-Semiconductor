@@ -1,4 +1,4 @@
-# Voltage-Protector-Device-for-Frontier-Semiconductor-by Md Reedwan Ahmed
+# Voltage-Protector-Device-for-Frontier-Semiconductor (Md Reedwan Ahmed)
 This repository contains the firmware, simulation files, and documentation for a microcontroller-based Voltage Protector system designed for the Frontier Semiconductor Embedded System Engineer assessment.
 
 ## Project Overview
