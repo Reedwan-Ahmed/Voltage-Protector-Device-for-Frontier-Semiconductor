@@ -20,7 +20,7 @@ The system continuously monitors emulated grid voltage and load current. It prot
 * **Remote UI:** Connect via the UART Virtual Terminal to view live telemetry and send remote configuration commands.
 
 ## Documentation & Evidence
-For a complete breakdown of the hardware architecture, firmware logic, and testing results, please read the **[Project Report (design_document.pdf)](./design_document.pdf)**. 
+Project Report **[Project Report (design_document.pdf)](./design_document.pdf)**. 
 
 To view the raw circuit diagrams or screenshots of the system handling faults, please check the **[schematics/](./schematics)** and **[test_evidence/](./test_evidence)** folders respectively.
 
@@ -28,6 +28,7 @@ To view the raw circuit diagrams or screenshots of the system handling faults, p
 You can click directly on the links below to access the project files and directories:
 * **[project_files/REEDWAN_PROTEUS_PROJECT.pdsprj](./project_files/REEDWAN_PROTEUS_PROJECT.pdsprj)** - The main Proteus simulation workspace.
 * **[src/voltage_protector.ino.hex](./src/voltage_protector.ino.hex)** - The compiled firmware hex file to upload to the microcontroller.
+* **[src/SourceCode_for_verify_only/SourceCode_for_verify_only.ino](./src/SourceCode_for_verify_only/SourceCode_for_verify_only.ino)** - The original Arduino IDE source code from which the compiled hex file was extracted.
 * **[design_document.pdf](./design_document.pdf)** - The 1-page Project Report detailing the design approach, components, and results.
 * **[schematics/](./schematics)** - Contains the system circuit diagrams and visual block diagrams.
 * **[test_evidence/](./test_evidence)** - View performance captures, logs, and screenshots of the simulation in action.
